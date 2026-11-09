@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Exempel på en modern hemsida för en lokal barberare.">
+<title>Studio Klipp | Demo – Hugo Web Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<title>Studio Klipp | Demo av Hugo Web Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body class="demo t-barber">
-<div class="bar"><div class="wrap">
-  <a href="index.html#exempel">← Till alla exempel</a>
-  <span>Demo: Studio Klipp är en påhittad verksamhet.</span>
-  <a href="index.html#kontakt">Kontakta Hugo Web Studio</a>
-</div></div>
+<div class="demo-top"><div class="wrap"><a href="index.html#exempel">← Hugo Web Studio</a><span>Demoprojekt · Påhittad verksamhet</span></div></div>
 <main>
-<section class="demo-hero"><div class="wrap">
-  <h1>Din stil. Ditt uttryck.</h1>
-  <p>En stilren hemsida som visar frisörens tjänster, priser, öppettider och hur kunder kan boka en tid.</p>
-  <div class="btns">
-    <a class="btn btn-primary" href="#tjanster">Se tjänster</a>
-    <a class="btn" href="index.html#kontakt">Skapa en liknande hemsida</a>
-  </div>
-</div></section>
-<section class="d-sec"><div class="wrap">
-  <h2>Välkommen till Studio Klipp</h2>
-  <p>En plats för personlig stil, noggrant hantverk och en avslappnad stund.</p>
-  <div class="info-grid">
-    <div><h3>Öppettider</h3>Mån–fre: 09.00–18.00<br>Lördag: 10.00–15.00</div>
-    <div><h3>Adress</h3>Exempelgatan 12, Exempelstad</div>
-  </div>
-</div></section>
-<section class="d-sec" id="tjanster"><div class="wrap">
-  <h2>Hitta din nästa stil</h2>
-  <p>Priserna är exempel och ska bytas till den riktiga verksamhetens priser.</p>
-  <div class="items">
-    <div class="item"><div><strong>Klippning</strong><p>En klassisk klippning anpassad efter dig.</p></div><strong>250 kr</strong></div>
-    <div class="item"><div><strong>Skin fade</strong><p>En noggrant utförd fade.</p></div><strong>300 kr</strong></div>
-    <div class="item"><div><strong>Skäggtrimning</strong><p>Formning och putsning av skägget.</p></div><strong>150 kr</strong></div>
-    <div class="item"><div><strong>Klippning + skägg</strong><p>En komplett behandling.</p></div><strong>380 kr</strong></div>
-  </div>
-</div></section>
-<section class="d-sec"><div class="wrap">
-  <h2>Redo för en ny klippning?</h2>
-  <p>En riktig kundsida kan länka till frisörens befintliga bokningssystem eller visa kontaktuppgifter. Den här knappen öppnar mejl till webbstudion och gör ingen riktig bokning.</p>
-  <div class="btns">
-    <a class="btn btn-primary" href="mailto:hu1go.webstudio@gmail.com?subject=Fr%C3%A5ga%20om%20fris%C3%B6rshemsida">Jag vill ha en liknande hemsida</a>
-    <a class="btn" href="index.html">Till huvudsidan</a>
-  </div>
-</div></section>
+<section class="demo-hero barber-hero">
+  <img class="demo-hero-image" src="images/barber/barber.jpg" alt="Exempelbild av en barbershop">
+  <div class="demo-hero-shade"></div>
+  <div class="wrap demo-hero-content"><p class="eyebrow">STUDIO KLIPP · DEMO</p><h1>Din stil.<br>Ditt uttryck.</h1><p>En avslappnad barbershop med fokus på hantverk, detaljer och personlig service.</p><div class="actions"><a class="button button-light" href="#tjanster">Se tjänster</a><a class="button button-outline-light" href="#kontakt">Kontakt</a></div></div>
+</section>
+<section class="section-tight demo-intro"><div class="wrap intro-grid"><div><p class="eyebrow">STUDIO KLIPP</p><h2>En bra klippning<br>börjar med detaljerna.</h2></div><p>Vi vill att varje besök ska kännas enkelt och personligt. Här hittar du information om våra behandlingar, priser och öppettider. Texten är ett exempel för demosidan.</p></div></section>
+<section class="section barber-gallery"><div class="wrap gallery-grid"><figure class="gallery-large"><img src="images/barber/barberworking.jpg" alt="Exempelbild på barberare som klipper en kund"><figcaption>Hantverk och precision</figcaption></figure><figure><img src="images/barber/barbertools.jpg" alt="Exempelbild på barberarverktyg"><figcaption>Verktyg och detaljer</figcaption></figure><figure><img src="images/barber/barberoutside.jpg" alt="Exempelbild på barbershopens utsida"><figcaption>En plats att komma tillbaka till</figcaption></figure></div></section>
+<section class="section demo-menu" id="tjanster"><div class="wrap"><div class="section-heading"><p class="eyebrow">TJÄNSTER · EXEMPEL</p><h2>Välj din behandling.</h2><p>Alla tjänster och priser är fiktiva exempel.</p></div><div class="menu-list">
+<div class="menu-item"><div><h3>Klippning</h3><p>En klassisk klippning anpassad efter dig.</p></div><strong>250 kr</strong></div>
+<div class="menu-item"><div><h3>Skin fade</h3><p>En noggrant utförd fade.</p></div><strong>300 kr</strong></div>
+<div class="menu-item"><div><h3>Skäggtrimning</h3><p>Formning och putsning av skägget.</p></div><strong>150 kr</strong></div>
+<div class="menu-item"><div><h3>Klippning + skägg</h3><p>En komplett behandling.</p></div><strong>380 kr</strong></div>
+</div></div></section>
+<section class="section demo-details" id="kontakt"><div class="wrap details-grid"><div><p class="eyebrow">HITTA HIT</p><h2>Välkommen in.</h2><p>Informationen nedan är exempel och anpassas efter den riktiga salongen. En befintlig extern bokningslänk kan läggas till om företaget använder en sådan.</p></div><div class="detail-card"><div><span>ADRESS</span><p>Exempelgatan 12<br>123 45 Exempelstad</p></div><div><span>ÖPPETTIDER</span><p>Mån–fre: 09.00–18.00<br>Lördag: 10.00–15.00</p></div><div><span>KONTAKT</span><p>08-000 00 00<br>hej@studioklipp.example</p></div></div></div></section>
+<section class="demo-cta"><div class="wrap"><p class="eyebrow">GILLAR DU UPPLÄGGET?</p><h2>En hemsida med<br>din stil och känsla.</h2><a class="button button-light" href="index.html#kontakt">Kontakta Hugo Web Studio ↗</a></div></section>
 </main>
-<footer class="footer"><div class="wrap">
-  <a class="logo" href="index.html"><i>H</i>Hugo Web Studio</a>
-  <p>Demoprojekt, inte en riktig frisörsalong.</p><p>© 2026 Hugo Web Studio</p>
-</div></footer>
-</body>
-</html>
+<footer class="demo-footer"><div class="wrap"><a href="index.html">← Till Hugo Web Studio</a><span>Fiktivt demoprojekt · Studio Klipp</span></div></footer>
+</body></html>
