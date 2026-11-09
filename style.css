@@ -89,6 +89,19 @@ nav .nav-cta{padding:10px 16px;background:var(--walnut);color:var(--paper)}
 .example-info h3{font-size:20px;margin:0 0 4px}.example-info p{font-size:13px;color:var(--muted);margin:0}
 .arrow{font-size:22px;color:var(--accent)}
 .demo-disclaimer{margin:22px 0 0}
+
+/* Tre lika stora, cirkulära exempel som byter plats automatiskt */
+.example-orbit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,5vw,70px);align-items:start;max-width:900px;margin:8px auto 0}
+.orbit-item{display:flex;flex-direction:column;align-items:center;gap:18px;text-decoration:none;text-align:center;min-width:0;animation:orbitFloat 7.5s ease-in-out infinite}
+.orbit-two{animation-delay:-2.5s}.orbit-three{animation-delay:-5s}
+.orbit-image{width:min(100%,250px);aspect-ratio:1/1;border-radius:50%;overflow:hidden;display:block;background:var(--sand);border:7px solid #fff;box-shadow:0 12px 34px rgba(40,35,31,.10);transition:transform .35s,box-shadow .35s}
+.orbit-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.orbit-item:hover .orbit-image{transform:translateY(-7px);box-shadow:0 18px 42px rgba(40,35,31,.16)}
+.orbit-item:hover .orbit-image img{transform:scale(1.06)}
+.orbit-item strong{font:700 19px var(--display);letter-spacing:-.02em}
+@keyframes orbitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){.orbit-item{animation:none}}
+
 /* Customer images and about */
 .customer-images{background:#e9e1d6}
 .customer-grid,.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
@@ -163,6 +176,7 @@ nav .nav-cta{padding:10px 16px;background:var(--walnut);color:var(--paper)}
   .service-grid{grid-template-columns:1fr 1fr}.service:nth-child(3){border-left:0;padding-left:0;border-top:1px solid var(--line)}
   .service:nth-child(4){border-top:1px solid var(--line)}
   .example-grid{gap:16px}.example-image{height:220px}
+  .example-orbit{gap:18px}.orbit-image{border-width:5px}
   .contact-grid,.customer-grid,.about-grid,.details-grid,.intro-grid,.image-band-grid{gap:40px}
 }
 @media(max-width:650px){
@@ -179,6 +193,7 @@ nav .nav-cta{padding:10px 16px;background:var(--walnut);color:var(--paper)}
   .service:first-child{border-top:0}
   .section-heading-row{display:block}.section-heading-row .lead{margin-top:20px}
   .example-grid{grid-template-columns:1fr;gap:30px}.example-image{height:250px}
+  .example-orbit{grid-template-columns:1fr;gap:30px}.orbit-image{width:min(68vw,230px)}.orbit-item strong{font-size:18px}
   .customer-grid,.about-grid,.contact-grid,.details-grid,.intro-grid,.menu-layout,.image-band-grid{grid-template-columns:1fr;gap:28px}
   .contact-card{padding:25px}
   .demo-hero{min-height:520px;height:75vh;max-height:680px}

@@ -1,1 +1,1 @@
-// Inget separat JavaScript behövs för den nuvarande versionen.
+// Exempelsidornas cirklar animeras med CSS. Ingen extern JavaScript behövs.
