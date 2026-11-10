@@ -29,18 +29,18 @@
       <p class="lead">Jag hjälper lokala företag att få en tydlig och modern närvaro online. Hemsidorna anpassas efter verksamheten – från pizzerior och barberare till mindre butiker.</p>
       <div class="actions">
         <a class="button button-dark" href="#kontakt">Berätta om din idé</a>
-        <a class="text-link" href="#exempel">Se demoprojekt <span aria-hidden="true">↘</span></a>
+        <a class="text-link" href="#exempel">Se exempel <span aria-hidden="true">↘</span></a>
       </div>
       <p class="small-note">Personlig kontakt direkt med mig under projektet.</p>
     </div>
     <div class="hero-showcase">
       <a class="showcase-main" href="pizzeria.html" aria-label="Se exempel på en pizzeriahemsida">
-        <img src="<img src="pizzainside.jpg" alt="Pizzeria">" alt="Interiör från en pizzeria" onerror="this.style.display='none'">
-        <span class="showcase-label">Pizzeria Bella</span>
+        <img src="pizzainside.jpg" alt="Interiör från en pizzeria">
+        <span class="showcase-label">Pizzeria</span>
       </a>
       <div class="showcase-bottom">
-        <a href="barber.html"><img src="images/barber/barber.jpg" alt="Interiör i en barbershop" onerror="this.style.display='none'"><span>Studio Klipp</span></a>
-        <a href="butik.html"><img src="images/butik/furniture.jpg" alt="Exempel på en mindre inredningsbutik" onerror="this.style.display='none'"><span>Lilla Butiken</span></a>
+        <a href="barber.html"><img src="barberoutside.jpg" alt="Interiör i en barbershop" onerror="this.style.display='none'"><span>Barberare</span></a>
+        <a href="butik.html"><img src="furniture.jpg" alt="Exempel på en mindre inredningsbutik" onerror="this.style.display='none'"><span>Liten butik</span></a>
       </div>
       <p class="image-caption">Exempelbilder från demoprojekten</p>
     </div>
@@ -95,21 +95,21 @@
 <section class="section examples" id="exempel">
   <div class="wrap">
     <div class="section-heading section-heading-row">
-      <div><p class="eyebrow">NÅGRA EXEMPEL</p><h2>Olika verksamheter.<br>Olika uttryck.</h2></div>
-      <p class="lead">Demosidorna visar hur en hemsida kan anpassas efter olika typer av företag.</p>
+      <div><p class="eyebrow">EXEMPEL PÅ HEMSIDOR</p><h2>Olika verksamheter.<br>Olika uttryck.</h2></div>
+      <p class="lead">Olika verksamheter, olika uttryck och lösningar anpassade efter verksamheten.</p>
     </div>
-    <div class="example-grid">
-      <a class="example-card" href="pizzeria.html">
-        <div class="example-image"><img src="images/pizzeria/pizza%20inside.jpg" alt="Pizzeria Bella – exempel på pizzeriahemsida" onerror="this.parentElement.classList.add('no-image')"><span>01 / MAT &amp; RESTAURANG</span></div>
-        <div class="example-info"><div><h3>Pizzeria Bella</h3><p>Meny, öppettider och hitta hit.</p></div><span class="arrow">↗</span></div>
+    <div class="example-orbit">
+      <a class="orbit-item orbit-one" href="pizzeria.html">
+        <span class="orbit-image"><img src="pizzainside.jpg" alt="Interiör från en pizzeria" loading="lazy"></span>
+        <strong>Pizzeria</strong>
       </a>
-      <a class="example-card" href="barber.html">
-        <div class="example-image"><img src="images/barber/barber.jpg" alt="Studio Klipp – exempel på barbershophemsida" onerror="this.parentElement.classList.add('no-image')"><span>02 / BARBERARE</span></div>
-        <div class="example-info"><div><h3>Studio Klipp</h3><p>Tjänster, priser och kontakt.</p></div><span class="arrow">↗</span></div>
+      <a class="orbit-item orbit-two" href="barber.html">
+        <span class="orbit-image"><img src="barberoutside.jpg" alt="Utsidan av en barberarsalong" loading="lazy"></span>
+        <strong>Barberare</strong>
       </a>
-      <a class="example-card" href="butik.html">
-        <div class="example-image"><img src="images/butik/furniture.jpg" alt="Lilla Butiken – exempel på butikshemsida" onerror="this.parentElement.classList.add('no-image')"><span>03 / BUTIK</span></div>
-        <div class="example-info"><div><h3>Lilla Butiken</h3><p>Produkter, öppettider och adress.</p></div><span class="arrow">↗</span></div>
+      <a class="orbit-item orbit-three" href="butik.html">
+        <span class="orbit-image"><img src="furniture.jpg" alt="Inredning i en mindre butik" loading="lazy"></span>
+        <strong>Liten butik</strong>
       </a>
     </div>
     <p class="demo-disclaimer">Alla tre är fiktiva demoprojekt. Namn, bilder, priser, öppettider och kontaktuppgifter är endast exempel.</p>
@@ -138,5 +138,6 @@
 </section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><a class="logo" href="index.html"><span class="logo-mark">H</span><span>Hugo Web Studio</span></a><span>Hemsidor för mindre företag</span><span>© 2026 Hugo Web Studio</span></div></footer>
+<script src="script.js" defer></script>
 </body>
 </html>

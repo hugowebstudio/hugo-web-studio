@@ -1,30 +1,30 @@
 # Hugo Web Studio
 
-Statisk webbprojekt byggt med HTML och CSS.
+Statisk webbprojekt byggt med HTML, CSS och lite JavaScript.
 
-## Struktur
+## Projektfiler
 
-- `index.html` – huvudsida
-- `pizzeria.html` – pizzeriad demo
-- `barber.html` – barbershop-demo
-- `butik.html` – butiksdemo
+- `index.html` – Hugo Web Studios startsida
+- `pizzeria.html` – exempelhemsida för en pizzeria
+- `barber.html` – exempelhemsida för en barberare
+- `butik.html` – exempelhemsida för en mindre butik
 - `style.css` – gemensamma stilar
-- `images/` – lokala bilder
+- `script.js` – JavaScript (cirklarna animeras med CSS)
 
-## Bilder som ska läggas i projektet
+## Bilder
 
-- `images/pizzeria/pizza inside.jpg`
-- `images/pizzeria/kabelpizza.jpg`
-- `images/pizzeria/making.jpg`
-- `images/barber/barber.jpg`
-- `images/barber/barberoutside.jpg`
-- `images/barber/barbertools.jpg`
-- `images/barber/barberworking.jpg`
-- `images/butik/furniture.jpg`
-- `images/butik/hyllor.jpg`
-- `images/butik/inredning.jpg`
+Alla bilder ligger direkt i samma mapp som HTML-filerna. Därför används endast filnamnet i bildsökvägarna.
 
-Bildfilerna ingår inte i denna ZIP ännu. Lägg in dem i mapparna ovan med exakt samma filnamn. Kontrollera särskilt stavningen `kabelpizza.jpg` mot det faktiska filnamnet innan uppladdning.
+- `pizzainside.jpg` – huvudbild för pizzerian
+- `kebabpizza.jpg` – pizzabild
+- `making.jpg` – bild från köket
+- `barberoutside.jpg` – huvudbild för barberaren
+- `barberworking.jpg` – barberare i arbete
+- `barbertools.jpg` – verktyg
+- `barber.jpeg` – extra barberbild
+- `furniture.jpg` – huvudbild för den lilla butiken
+- `hylla.jpg` – butiksbild
+- `inredning.jpg` – butiksbild
 
 Alla demoverksamheter och deras kontaktuppgifter, priser och öppettider är fiktiva exempel. Byt ut dem innan en sida används för en riktig kund.
 
