@@ -248,3 +248,18 @@ nav .nav-cta{padding:10px 16px;background:var(--walnut);color:var(--paper)}
  .menu-note{grid-template-columns:1fr;gap:16px}
  .menu-note img{height:210px}
 }
+
+/* Contact area: email and enquiry form grouped at the bottom */
+.contact-grid{grid-template-columns:.9fr 1.1fr;align-items:start;gap:clamp(45px,8vw,120px)}
+.contact-intro{padding-top:12px}
+.contact-options{display:grid;grid-template-columns:1fr;gap:18px}
+.contact-option{padding:26px 28px;border:1px solid var(--line);background:var(--surface)}
+.contact-option h3{font-size:clamp(22px,2.5vw,29px);margin:0 0 10px}
+.contact-option>p:not(.eyebrow){max-width:540px;color:var(--muted);margin:0 0 16px}
+.contact-option .email{display:block;font-size:clamp(16px,2vw,20px);font-weight:700;text-decoration:none;margin:8px 0 10px}
+.contact-option .eyebrow{margin-bottom:10px}
+.form-option{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.form-option>p:not(.eyebrow){color:rgba(255,255,255,.75)}
+.form-option .eyebrow{color:var(--sand)}
+.form-option .button{margin-top:4px}
+@media(max-width:650px){.contact-grid{grid-template-columns:1fr;gap:28px}.contact-options{gap:14px}.contact-option{padding:22px}}
