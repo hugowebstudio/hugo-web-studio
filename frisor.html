@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Exempel på en modern och personlig hemsida för en frisörsalong.">
+<title>Studio Form | Frisör – Demo från Hugo Web Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.salon-demo{--salon-ink:#292923;--salon-muted:#77766d;--salon-sage:#7d8874;--salon-cream:#f4f1e9;--salon-pink:#d9c7bc}
+.salon-demo .demo-top{background:#292923}
+.salon-demo .demo-hero{min-height:650px;background:#5c5b50}
+.salon-demo .demo-hero-shade{background:linear-gradient(90deg,rgba(28,30,25,.78),rgba(28,30,25,.28) 65%,rgba(28,30,25,.12))}
+.salon-demo .demo-hero .eyebrow{color:#e5d4c7}
+.salon-demo .demo-hero h1{max-width:700px}
+.salon-demo .salon-intro{background:#eeebe3}
+.salon-demo .salon-intro h2,.salon-demo .salon-services h2,.salon-demo .salon-gallery h2,.salon-demo .salon-details h2{font-size:clamp(32px,4vw,49px)}
+.salon-demo .salon-services{background:#f8f6f1}
+.salon-demo .service-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.salon-demo .service-tile{background:#eeebe3;padding:24px;border-top:3px solid var(--salon-sage)}
+.salon-demo .service-tile h3{font-size:19px;margin:0 0 8px}
+.salon-demo .service-tile p{font-size:14px;color:var(--salon-muted);margin:0}
+.salon-demo .salon-price-list{max-width:850px;border-top:1px solid #d8d4ca}
+.salon-demo .salon-price-row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid #d8d4ca}
+.salon-demo .salon-price-row h3{font-size:17px;margin:0 0 4px}
+.salon-demo .salon-price-row p{font-size:13px;color:var(--salon-muted);margin:0}
+.salon-demo .salon-price-row strong{white-space:nowrap}
+.salon-demo .salon-gallery{background:#e9e4db}
+.salon-demo .salon-gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:16px}
+.salon-demo .salon-gallery-grid figure{margin:0}
+.salon-demo .salon-gallery-grid img{width:100%;height:280px;object-fit:cover}
+.salon-demo .salon-gallery-grid figcaption{font-size:13px;color:var(--salon-muted);margin-top:8px}
+.salon-demo .salon-feature{background:#dfe2d8}
+.salon-demo .salon-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.salon-demo .salon-feature-grid img{width:100%;height:390px;object-fit:cover}
+.salon-demo .salon-feature-grid p:not(.eyebrow){color:#5d6258}
+.salon-demo .salon-products{background:#f8f6f1}
+.salon-demo .product-card{background:#eeebe3}
+.salon-demo .salon-details{background:#eeebe3}
+.salon-demo .salon-contact-card{background:#f8f6f1;border:1px solid #d8d4ca;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.salon-demo .salon-contact-card span{font-size:10px;letter-spacing:.14em;color:var(--salon-sage);font-weight:700}
+.salon-demo .salon-contact-card p{margin:7px 0 0;font-size:14px}
+.salon-demo .demo-cta{background:#596253}
+.salon-demo .demo-cta .eyebrow{color:#e8e4d9}
+.salon-demo .salon-note{font-size:12px;color:#77766d;margin-top:25px}
+@media(max-width:800px){.salon-demo .service-tiles{grid-template-columns:1fr 1fr}.salon-demo .salon-gallery-grid{grid-template-columns:1fr 1fr}.salon-demo .salon-gallery-grid figure:first-child{grid-column:1/-1}.salon-demo .salon-feature-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:600px){.salon-demo .service-tiles,.salon-demo .salon-gallery-grid,.salon-demo .salon-contact-card{grid-template-columns:1fr}.salon-demo .salon-gallery-grid figure:first-child{grid-column:auto}.salon-demo .salon-gallery-grid img{height:235px}.salon-demo .salon-feature-grid img{height:260px}.salon-demo .salon-price-row{gap:12px}.salon-demo .salon-price-row h3{font-size:16px}}
+</style>
+</head>
+<body class="demo salon-demo">
+<div class="demo-top"><div class="wrap"><a href="index.html#exempel">← Hugo Web Studio</a><span>Demoprojekt · Fiktiv frisörsalong</span></div></div>
+<main>
+<section class="demo-hero">
+  <img class="demo-hero-image" src="making.jpg" alt="Exempelbild från en frisörsalong">
+  <div class="demo-hero-shade"></div>
+  <div class="wrap demo-hero-content">
+    <p class="eyebrow">STUDIO FORM · FRISÖR</p>
+    <h1>En stil som känns som du.</h1>
+    <p>Personlig hårvård, genomtänkta detaljer och behandlingar anpassade efter dina önskemål.</p>
+    <div class="actions"><a class="button button-light" href="#tjanster">Se behandlingar</a><a class="button button-outline-light" href="#kontakt">Hitta salongen</a></div>
+  </div>
+</section>
+<section class="section-tight salon-intro">
+  <div class="wrap intro-grid">
+    <div><p class="eyebrow">VÄLKOMMEN TILL STUDIO FORM</p><h2>Din stund. Din stil. Vårt hantverk.</h2></div>
+    <p>Vi vill att varje besök ska kännas personligt och avslappnat. Oavsett om du vill fräscha upp din vanliga frisyr, prova en ny färg eller få hjälp att hitta en stil som passar dig börjar vi med att lyssna på dina önskemål.</p>
+  </div>
+</section>
+<section class="section salon-services" id="tjanster">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">BEHANDLINGAR · EXEMPEL</p><h2>Hitta behandlingen som passar dig.</h2><p class="lead">Tjänsterna nedan är exempel och kan anpassas efter vad salongen faktiskt erbjuder.</p></div>
+    <div class="service-tiles">
+      <article class="service-tile"><h3>Klippning</h3><p>Damklippning, herrklippning, barnklippning och formning.</p></article>
+      <article class="service-tile"><h3>Färg och slingor</h3><p>Färgning, slingor, toning och uppfräschning av färg.</p></article>
+      <article class="service-tile"><h3>Styling</h3><p>Fön, styling och hjälp inför speciella tillfällen.</p></article>
+      <article class="service-tile"><h3>Hårförlängning</h3><p>Förlängning och förtjockning om salongen erbjuder det.</p></article>
+      <article class="service-tile"><h3>Skägg och grooming</h3><p>Skäggtrimning och formning som valbar tilläggstjänst.</p></article>
+      <article class="service-tile"><h3>Personlig rådgivning</h3><p>Tips om frisyr, hårvård och produkter för din vardag.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section demo-menu">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">PRISLISTA · EXEMPEL</p><h2>Tydliga priser och behandlingar.</h2><p>Priserna är endast exempel och byts ut mot salongens egna priser.</p></div>
+    <div class="salon-price-list">
+      <div class="salon-price-row"><div><h3>Klippning</h3><p>Dam, herr eller kortare hår</p></div><strong>Från 450 kr</strong></div>
+      <div class="salon-price-row"><div><h3>Barnklippning</h3><p>Klippning för yngre kunder</p></div><strong>Från 300 kr</strong></div>
+      <div class="salon-price-row"><div><h3>Klippning och styling</h3><p>Klippning med avslutande styling</p></div><strong>Från 550 kr</strong></div>
+      <div class="salon-price-row"><div><h3>Färgning</h3><p>Pris beroende på längd och önskat resultat</p></div><strong>Från 950 kr</strong></div>
+      <div class="salon-price-row"><div><h3>Slingor</h3><p>Behandling anpassad efter håret</p></div><strong>Från 1 200 kr</strong></div>
+      <div class="salon-price-row"><div><h3>Hårförlängning</h3><p>Konsultation och offert efter önskemål</p></div><strong>På förfrågan</strong></div>
+      <div class="salon-price-row"><div><h3>Skäggtrimning</h3><p>Valbar tjänst om salongen erbjuder den</p></div><strong>Från 200 kr</strong></div>
+    </div>
+    <p class="salon-note">Alla behandlingar och priser är fiktiva exempel i denna demo.</p>
+  </div>
+</section>
+<section class="section salon-gallery">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">INSPIRATION OCH GALLERI</p><h2>Olika uttryck, olika möjligheter.</h2><p class="lead">Ett bildgalleri kan visa exempel på klippningar, färgningar och salongens arbete.</p></div>
+    <div class="salon-gallery-grid">
+      <figure><img src="haircolor.jpg" alt="Exempel på hårfärgning"><figcaption>Färg och nyanser</figcaption></figure>
+      <figure><img src="texturedhair.jpg" alt="Exempel på texturerad frisyr"><figcaption>Textur och form</figcaption></figure>
+      <figure><img src="classiccut.jpg" alt="Exempel på klassisk klippning"><figcaption>Klassisk klippning</figcaption></figure>
+      <figure><img src="fade.jpg" alt="Exempel på fade-klippning"><figcaption>Fade och korta frisyrer</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section salon-feature">
+  <div class="wrap salon-feature-grid">
+    <img src="barberworking.jpg" alt="Exempelbild på frisörarbete">
+    <div><p class="eyebrow">PERSONLIG SERVICE</p><h2>En salong där detaljerna får ta plats.</h2><p>Här kan ni berätta om salongens arbetssätt, erfarenhet och vad som gör besöket speciellt. Text och bild byts ut efter verksamhetens egna material.</p></div>
+  </div>
+</section>
+<section class="section salon-products">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">HÅRVÅRD OCH PRODUKTER</p><h2>Ta hand om håret även hemma.</h2><p>Om salongen säljer produkter kan de visas upp med bilder och korta beskrivningar.</p></div>
+    <div class="product-grid">
+      <article class="product-card"><img src="hairproducts.jpg" alt="Exempel på hårvårdsprodukter"><h3>Schampo och balsam</h3><p>För en enkel hårvårdsrutin.</p></article>
+      <article class="product-card"><img src="pomade.jpg" alt="Exempel på stylingprodukt"><h3>Stylingprodukter</h3><p>Produkter för form och stadga.</p></article>
+      <article class="product-card"><img src="hairspray.jpg" alt="Exempel på hårspray"><h3>Hårspray</h3><p>För att hålla frisyren på plats.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section salon-details" id="kontakt">
+  <div class="wrap details-grid">
+    <div><p class="eyebrow">BOKNING OCH KONTAKT</p><h2>Välkommen till Studio Form.</h2><p>Här kan en bokningsknapp länka vidare till salongens befintliga bokningssystem. Besökaren kan också hitta adress, öppettider och kontaktuppgifter.</p><a class="button button-dark" href="#kontaktkort">Bokning och kontakt</a></div>
+    <div class="salon-contact-card" id="kontaktkort">
+      <div><span>ADRESS</span><p>Exempelgatan 12<br>123 45 Exempelstad</p></div>
+      <div><span>ÖPPETTIDER</span><p>Mån–fre: 09.00–18.00<br>Lör: 10.00–15.00</p></div>
+      <div><span>TELEFON</span><p>08-000 00 00</p></div>
+      <div><span>BOKNING</span><p>Bokningslänk läggs till här</p></div>
+    </div>
+  </div>
+</section>
+<section class="demo-cta"><div class="wrap"><p class="eyebrow">GILLAR DU UPPLÄGGET?</p><h2>Vi anpassar hemsidan<br>efter din salong.</h2><p>Det här är en demo. Namn, bilder, texter, tjänster och priser byts ut mot dina egna uppgifter.</p><a class="button button-light" href="index.html#kontakt">Kontakta Hugo Web Studio ↗</a></div></section>
+</main>
+<footer class="demo-footer"><div class="wrap"><a href="index.html">← Till Hugo Web Studio</a><span>Fiktivt demoprojekt · Studio Form</span></div></footer>
+</body>
+</html>
